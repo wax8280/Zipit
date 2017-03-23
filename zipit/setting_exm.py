@@ -2,5 +2,5 @@
 # coding: utf-8
 
 TARGET_DIR=[
-    '/home/vincent/PycharmProjects_bac'
+    '/home/vincent/'
 ]
