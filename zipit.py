@@ -22,7 +22,7 @@ def zip_dir(path, filter_dirname_list=None):
 
     for each_dir in all_dir:
         dir_date = datetime.datetime.strptime(each_dir, "%Y-%m-%d").date()
-        if now_date < dir_date:
+        if now_date > dir_date:
             absolute_dir = os.path.join(path, each_dir)
             start_zip(absolute_dir)
 
