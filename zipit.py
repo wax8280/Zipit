@@ -25,7 +25,7 @@ def start_zip(absolute_dir):
         print(output)
 
 def zip_dir(path, filter_dirname_list=None):
-    all_dir = search_dir(path, filter_dirname_list)
+    all_dir = search_dir(path, ['[^7z]$'])
     now_date_string = datetime.datetime.now().strftime("%Y-%m-%d-%H")
     now_date = datetime.datetime.strptime(now_date_string, "%Y-%m-%d-%H")
 
