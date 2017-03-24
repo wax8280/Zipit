@@ -59,10 +59,10 @@ def search_dir(path, filter_dirname_list=None):
     result = []
     if filter_dirname_list:
         for each_dir in os.listdir(path):
-            filtered = True
+            filtered = False
             for filter_dirname in filter_dirname_list:
                 if re.search(filter_dirname, each_dir):
-                    filtered = False
+                    filtered = True
                     break
             if filtered:
                 result.append(each_dir)
